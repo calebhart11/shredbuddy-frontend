@@ -1,9 +1,14 @@
 import { useLoaderData, Form } from "react-router-dom";
-import Session from "../components/Session"
+// import Session from "../components/Session"
+import SessionCard from "../components/SessionCard";
+
+
 const Index = (props) => {
     const sessions = useLoaderData()
-
+console.log(sessions, "this is the data")
     return <>
+    {sessions.map((session,idx) => <SessionCard key={idx} session={session}/>)}
+
     <div className="index">
         <h2>Plan A Session</h2>
         <Form action="/create" method="post">
@@ -13,7 +18,7 @@ const Index = (props) => {
             <button>Create Your Session</button>
         </Form>
     </div>
-    {/* {sessions.map((sessions) => <Session key={sessions.id} sessions={sessions}/>)} */}
+    {/* {sessions.map((session,idx) => <SessionCard key={idx} session={session}/>)} */}
     </>
 
 }
