@@ -11,11 +11,12 @@ console.log(sessions, "this is the data")
     {sessions.map((session,idx) => <SessionCard key={idx} session={session}/>)}
 
     {/* <div className="index"> */}
-        <h2>Plan A Session</h2>
+        {/* <h2>Plan A Session</h2> */}
         <Form action="create" method="post">
-            <input type="text" name="Date" placeholder="Date:"/>
-            <input type="text" name="Mountain" placeholder="Mountain:"/>
-            <input type="text" name="Goals" placeholder="Goals:"/>
+        <h2>Plan A Session</h2>
+            <input type="text" name="date" placeholder="Date:"/>
+            <input type="text" name="mountain" placeholder="Mountain:"/>
+            <input type="text" name="goals" placeholder="Goals:"/>
             <button>Create Your Session</button>
         </Form>
     </div>
