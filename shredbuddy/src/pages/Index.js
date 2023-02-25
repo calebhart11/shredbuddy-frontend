@@ -8,12 +8,12 @@ const Index = (props) => {
 console.log(sessions, "this is the data")
     return <>
      <div className="index">
-    {sessions.map((session,idx) => <SessionCard key={idx} session={session}/>)}
+    <div className="cards">{sessions.map((session,idx) => <SessionCard key={idx} session={session}/>)}</div>
 
     {/* <div className="index"> */}
         {/* <h2>Plan A Session</h2> */}
         <Form action="create" method="post">
-        <h2>Plan A Session</h2>
+            <h2>Plan A Session</h2>
             <input type="text" name="date" placeholder="Date:"/>
             <input type="text" name="mountain" placeholder="Mountain:"/>
             <input type="text" name="goals" placeholder="Goals:"/>

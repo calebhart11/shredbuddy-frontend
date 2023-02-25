@@ -10,12 +10,41 @@ export default function Show(props) {
     return (<>
             
         <div className="show">
-            <SessionCard key={Index} session={session}>
+            <SessionCard key={Show} session={session}>
             <h1>{session.mountain}</h1>
             <h2>{session.date}</h2>
             <p>{session.goals}</p>
             </SessionCard>
+            
         </div>
+        <h2>Update this session</h2>
+        <Form action={`/update/${session.id}`} method="post">
+          <input
+            type="text"
+            name="date"
+            placeholder="Date:"
+            defaultValue={session.date}
+          />
+          <input
+            type="text"
+            name="mountain"
+            placeholder="Mountain"
+            defaultValue={session.mountain}
+          />
+          <input
+            type="text"
+            name="goals"
+            placeholder="Goals:"
+            defaultValue={session.goals}
+          />
+          <button>Update Session</button>
+        </Form>
+        <Form action={`/delete/${session.id}`} method="post">
+            <button>Delete Session</button>
+        </Form>
+        <Link to="/">
+        <button>Go Back</button>
+      </Link>
         </>
     )
 }
