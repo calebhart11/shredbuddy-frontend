@@ -4,12 +4,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { Link } from 'react-router-dom';
+import Calendar from 'react-calendar';
 
 export default function SessionCard(props) {
     // destructure props
     const {session } = props
     //destructure session
     const {mountain, date, goals} = session
+    
   return (
     <div className="sessionCard">
     <Card sx={{ maxWidth: 345 }}>
