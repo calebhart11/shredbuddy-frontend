@@ -9,7 +9,7 @@ export default function Show(props) {
     const session = useLoaderData()
     return (<>
 
-<h2>Update this session</h2>
+<div className="updatecontainer"><h2>Update this session</h2>
         <Form action={`/update/${session.id}`} method="post">
           <input
             type="text"
@@ -29,14 +29,18 @@ export default function Show(props) {
             placeholder="Goals:"
             defaultValue={session.goals}
           />
-          <button>Update Session</button>
+          <button className="update">Update Session</button>
         </Form>
         <Form action={`/delete/${session.id}`} method="post">
-            <button>Delete Session</button>
-        </Form>
-        <Link to="/">
-        <button>Go Back</button>
+            <button className="delete">Delete Session</button>
+            <Link to="/">
+        <button className="back">Go Back</button>
       </Link>
+        </Form>
+        </div>
+        {/* <Link to="/">
+        <button>Go Back</button>
+      </Link> */}
             
         <div className="show">
             <SessionCard key={Show} session={session}>
@@ -46,6 +50,7 @@ export default function Show(props) {
             </SessionCard>
             
         </div>
+        
         {/* <h2>Update this session</h2>
         <Form action={`/update/${session.id}`} method="post">
           <input

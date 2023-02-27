@@ -32,7 +32,7 @@ function App() {
         </p>
       ) : (
         <p className='text-center'>
-          <span className='bold'>Default selected date:</span>{' '}
+          <span className='bold'>Date:</span>{' '}
           {date.toDateString()}
         </p>
       )}

@@ -19,7 +19,7 @@ export default function SessionCard(props) {
         <CardMedia
           component="img"
           height="140"
-          image="https://i.imgur.com/0bw8kOZ.jpg"
+          image="https://i.imgur.com/jPkWqhy.jpg,https://i.imgur.com/0bw8kOZ.jpg,https://i.imgur.com/jPkWqhy.jpg"
           alt={mountain}/>
         <CardContent>
           <Typography gutterBottom variant="h3" component="div">
