@@ -1,9 +1,9 @@
 import { createBrowserRouter,createRoutesFromElements, Outlet } from 'react-router-dom';
-import Session from './components/Session';
-import Show from './pages/Show'
-import Index from './pages/Index';
+// import Session from './components/Session';
+// import Show from './pages/Show'
+// import Index from './pages/Index';
 import './App.css';
-import {gapi} from "gapi-script";
+// import {gapi} from "gapi-script";
 import Calendar from "react-calendar"
 import { useState } from 'react';
 

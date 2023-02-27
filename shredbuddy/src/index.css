@@ -46,8 +46,6 @@ code {
   justify-self: center;
   margin: 0 auto;
   justify-content: center;
-  
-  
   margin: 0 auto;
   padding: 10px;  
  }
@@ -169,4 +167,11 @@ code {
   border-bottom-right-radius: 6px;
   background: #7cd7fb;
   color: white;
+ }
+ h2{
+  margin-top: 8px;
+  margin-bottom: 8px;;
+ }
+ form{
+  margin-bottom: 8px;
  }
