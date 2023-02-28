@@ -16,26 +16,6 @@ function App() {
   
     
     <div className="App">
-      <div className='calendar-container'>
-        <Calendar
-          onChange={setDate}
-          value={date}
-          selectRange={true}
-        />
-      </div>
-      {date.length > 0 ? (
-        <p className='text-center'>
-          <span className='bold'>From:</span>{' '}
-          {date[0].toDateString()}
-          &nbsp;|&nbsp;
-          <span className='bold'>to:</span> {date[1].toDateString()}
-        </p>
-      ) : (
-        <p className='text-center'>
-          <span className='bold'>Date:</span>{' '}
-          {date.toDateString()}
-        </p>
-      )}
     
       <Outlet/>
     </div>

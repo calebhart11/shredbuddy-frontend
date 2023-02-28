@@ -14,7 +14,7 @@ export default function SessionCard(props) {
     
   return (
     <div className="sessionCard">
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345,height:400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
