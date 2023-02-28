@@ -11,6 +11,9 @@ export default function Show(props) {
     // const {mountain, date, goals} = session
     const session = useLoaderData()
     return (<>
+    
+  <h2>Update this session</h2>
+
 <div className='calendar-container'>
         <Calendar
           onChange={setDate}
@@ -33,7 +36,7 @@ export default function Show(props) {
       )}
 <div className="updatecontainer">
   
-  <h2>Update this session</h2>
+  {/* <h2>Update this session</h2> */}
         <Form action={`/update/${session.id}`} method="post">
           <input
             type="text"
