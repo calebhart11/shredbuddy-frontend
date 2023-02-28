@@ -1,7 +1,7 @@
 import { useLoaderData, Form } from "react-router-dom";
 // import Session from "../components/Session"
 import SessionCard from "../components/SessionCard";
-import Calendar from "react-calendar";
+// import Calendar from "react-calendar";
 
 
 const Index = (props) => {
